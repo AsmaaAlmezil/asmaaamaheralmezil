@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+  
+}
+/*part1*/
+header{
+    width: 100%;
+   
+    position: fixed;
+    background-color: rgb(243, 181, 13);
+   
+    z-index: 999;
+    
+}
+header .container{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    
+}
+.header{
+    display: flex;
+    margin-left: 20px;
+    height: 60px;
+}
+
+.header i{
+font-size: 45px;
+color: rgb(118, 88, 13);
+padding-top: 6px;
+}
+.header h1{
+margin: 0 10px;
+font-size: 40px;
+font-weight:bold;
+ font-family: 'Caveat', cursive;
+ color:rgb(30, 19, 9);
+}
+
+.logo  li{
+display: inline-block;
+
+
+
+}
+.logo  a{
+    margin:0 16px;
+    position: relative;
+ text-transform: capitalize;
+   color:aliceblue;
+   font-weight: bold;
+   font-size: 20px;
+   transition:1.2s ease;
+ 
+   
+}
+
+
+
+.logo  a:hover{
+   color:rgb(91, 67, 2) ;
+   transform:scale(19)
+}
+
+/*part2*/
+
+ 
+section{
+  width:100%;
+   height: 100%;
+   display: flex;
+justify-content: center;
+align-items: center;
+    
+ }
+section .contact{
+width: 40%;
+height: 60%;
+border-radius: 10px;
+box-shadow: -2px -2px 3px 3px rgb(222, 137, 10)  ,2px 2px 3px 3px rgb(249, 154, 12) ;
+  }
+section .contact h1{
+   text-align: center;
+   margin: 40px 0px 20px 0px;
+   text-transform: capitalize;
+   font-size: 40px;
+   color:  rgb(137, 85, 8);
+  }
+input{
+width:70%;
+color:  rgb(77, 58, 13);
+border: none;
+outline: none;
+border-radius: 5px;
+text-transform: capitalize;
+padding: 10px;
+border-radius: 10px;
+ border: 2px  rgb(140, 104, 7) solid ;
+padding-left: 30px;
+font-size: 17px;
+margin:20px 0px 0px 10%;
+caret-color: rgb(138, 138, 138);
+}
+
+label i{
+    font-size: 25px;
+    color: rgb(222, 137, 10);
+    transform: translate(93px ,4px);
+}
+button{
+    width:70%;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+    padding: 10px;
+    border-radius: 10px;
+    transition:1.2s ease;
+   font-weight: 700;
+    font-size: 20px;
+    margin:20px 0px 0px 14.5%; 
+    background-color:  rgb(222, 137, 10);
+}
+h2{
+    color:  rgb(100, 62, 6);
+    margin: 20px 0px 0px 22%;
+    font-size: 25px;
+    font-weight: 500;
+   
+}
+h2 a{
+    text-transform: capitalize;
+color: rgb(100,62,6);
+font-weight:700;
+}
+h2 a:hover{
+    color:rgb(222, 137, 10) ;
+}
+
+ button:hover{
+    color: white;
+    background-color: rgb(148, 86, 25);
+ }

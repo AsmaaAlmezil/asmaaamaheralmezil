@@ -1,0 +1,487 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  background-image: url(picture/Public-Libraries-in-Dubai-Cover-ar06012022.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+/*start header*/
+header {
+  width: 100%;
+  position: fixed;
+  background-color: rgb(243, 181, 13);
+  z-index: 999;
+}
+header .container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header {
+  display: flex;
+  margin-left: 20px;
+  height: 60px;
+}
+header .header i {
+  font-size: 45px;
+  color: rgb(118, 88, 13);
+  padding-top: 6px;
+}
+header .header h1 {
+  margin: 0 10px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Caveat", cursive;
+  color: rgb(30, 19, 9);
+}
+header .navbar li {
+  display: inline-block;
+}
+header .navbar a {
+  margin: 0 16px;
+  position: relative;
+  text-transform: capitalize;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 1.2s ease;
+}
+header .navbar a:hover {
+  color: rgb(91, 67, 2);
+  transform: scale(19);
+}
+header .bars{
+   color: white;
+   font-size: 20px;
+   display: none;
+}
+@media (max-width:975px) {
+   header .bars{
+      display: block;
+   }
+   header .navbar{
+      position: absolute;
+      top: 100%;
+      background-color: rgb(243, 181, 13);;
+      width: 100%;
+      left: -80rem;
+      text-align: center;
+      transition: 0.9s;
+   }
+   header .navbar ul {
+      display: flex;
+      flex-direction: column;
+   }
+   header .navbar ul li{
+      padding: 15px;
+   }
+   header .bars:hover ~ .navbar{
+      left: 0;
+   }
+}
+/* end header  */
+
+/* start text  */
+.text div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(80px);
+  z-index: 333px;
+  text-align: center;
+}
+.text div h2 {
+  font-size: 60px;
+  color: white;
+}
+.text div h1 {
+  font-size: 27px;
+  color: white;
+  line-height: 35px;
+  margin: 18px 0;
+}
+.text div button {
+  padding: 15px 40px;
+  border-radius: 10px;
+  border: none;
+  transition: 1.2s ease;
+  font-size: 20px;
+  color: aliceblue;
+  background-color: rgb(243, 181, 13);
+  font-weight: 700;
+  cursor: pointer;
+}
+.text div button:hover {
+  background-color: rgb(148, 86, 25);
+  color: aliceblue;
+}
+/* end text  */
+/*part2*/
+.part {
+  width: calc(100% - 70px);
+  margin: 0 auto;
+}
+.part > div{
+  transform: translateY(60px);
+  background-color: rgb(249, 240, 204);
+}
+.part  .about_us {
+  font-size: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0;
+  color: rgb(243, 181, 13);
+}
+.part  .about_us span {
+  color: rgb(15, 14, 14);
+}
+.part .container2 {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.part  .container2 img {
+  width: 600px;
+  margin-top: 20px;
+}
+.part .container2 .text1 {
+  width: 50%;
+}
+.part  .container2 .text1 .elemant1 {
+  font-size: 30px;
+  line-height: 60px;
+  margin-left: 7px;
+}
+.part  .container2 .text1 P {
+  width:90%;
+  line-height: 29px;
+  font-size: 20px;
+  color: rgb(30, 19, 9);
+  font-weight: 500;
+}
+.part  .container2 .text1 .paragraph2 {
+  margin: 20px 0;
+}
+.part  .container2 .text1 button {
+  color: white;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 10px 30px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.7s ease;
+  background-color: rgb(243, 181, 13);
+}
+.part  .container2 .text1 button:hover {
+  background-color: rgb(148, 86, 25);
+  color: aliceblue;
+}
+/*mpart3*/
+main {
+  width: calc(100% - 70px);
+  margin: 0 auto;
+  margin-top: 45px;
+}
+main .products {
+  width: 100%;
+  transform: translateY(60px);
+  text-transform: capitalize;
+  background-color: rgb(249, 240, 204);
+ 
+}
+.products > h1 {
+  font-size: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0;
+  color: rgb(243, 181, 13);
+}
+.products > h1 span {
+  color: rgb(15, 14, 14);
+}
+.product {
+  margin-top: 50px ;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.product .books-4 {
+  width:600px ;
+  margin: 22px 0;
+}
+.books-4 > div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: rgb(246, 244, 239);
+  box-shadow: 2px 1px 2px 1px rgb(243, 181, 13),
+    -1px -1px 2px 1px rgb(243, 181, 13);
+  padding: 20px;
+}
+
+.books-4 > div .text2 {
+  border-left: 5px rgb(243, 181, 13) solid;
+  border-radius: 5px;
+  font-size: 16px;
+  padding-left: 15px;
+}
+.books-4 > div .text2 h1 {
+  font-weight: bold;
+  font-family: "Caveat", cursive;
+  padding-bottom: 5px;
+  font-size: 25px;
+}
+.books-4 > div .text2 i {
+  font-size: 27px;
+  padding-bottom: 7px;
+  color: rgb(243, 181, 13);
+}
+.books-4 > div .text2 p {
+  line-height: 25px;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.books-4 > div .text2 h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+.books-4 button {
+  margin: 15px 0;
+  padding: 10px 40px;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  transition: 1.2s ease;
+  background-color: rgb(243, 181, 13);
+}
+.books-4 > div img {
+  width: 250px;
+}
+.books-4 > div img:hover {
+  transform: scale(1.1);
+}
+.books-4 button:hover {
+  background-color: rgb(148, 86, 25);
+  color: aliceblue;
+}
+/*part4*/
+.section1 {
+  width: calc(100% - 70px);
+  position: relative;
+  margin: 50px auto;
+}
+.section1 > div {
+  
+  position: relative;
+}
+.section1 > div > div {
+  padding: 25px;
+  background-color: rgb(249, 240, 204);
+  transform: translateY(60px);
+}
+
+.section1 > div > div > h1 {
+  font-size: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0px 0px 90px 0px;
+  color: rgb(243, 181, 13);
+}
+
+.section1 > div > div > h1 span {
+  color: rgb(15, 14, 14);
+}
+.section1 .review {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.img1,
+.img3 {
+  width: 370px;
+  box-shadow: 2px -1px 2px 1px rgb(243, 181, 13);
+  background-color: rgb(229, 233, 205);
+  padding: 20px;
+}
+.Youssefal{
+  height: 410px;
+  width: 370px;
+  box-shadow: 2px -1px 2px 1px rgb(243, 181, 13);
+  background-color: rgb(229, 233, 205);
+  padding: 20px;
+}
+.review i {
+  font-size: 24px;
+  color: rgb(243, 181, 13);
+  margin: 10px 0;
+}
+.review p {
+  margin: 8px 0;
+  color: rgba(64, 63, 63, 0.77);
+  text-transform: capitalize;
+  line-height: 1.5;
+}
+.review .text3 {
+  display: flex;  
+  margin: 20px 0;
+}
+.text3 i {
+  color: rgb(243, 181, 13);
+  font-size: 70px;
+}
+.text3 div {
+  text-transform: capitalize;
+  padding: 15px;
+  margin-right: 60px;
+}
+.text3 div h1 {
+  font-size: 20px;
+}
+.text3 img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+/*part5*/
+.section2 {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.section2 > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 70px;
+  background-color: rgb(249, 240, 204);
+  border-bottom: 1px solid rgba(132, 130, 128, 0.458);
+  display: flex;
+  justify-content: space-evenly;
+}
+.section2 .link {
+  height: 210px;
+  display: flex;
+  margin-top: 70px;
+
+  flex-direction: column;
+  justify-content: space-between;
+  text-transform: capitalize;
+  transition: 0.4s;
+}
+
+.link p {
+  font-weight: 600;
+  color: rgb(118, 88, 13);
+}
+.link a {
+  font-weight: 600;
+  color: rgb(118, 88, 13);
+  margin: 0 10px;
+}
+.link a:hover {
+  color: rgb(243, 181, 13);
+  text-decoration-line: underline;
+}
+/*part6*/
+footer {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  transform: translateY(70px);
+}
+footer div {
+
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+}
+footer h2 {
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+footer h2 span {
+  color: rgb(243, 181, 13);
+}
+
+.listul {
+  width: 40px;
+  border: 2px black solid;
+  text-align: center;
+  border-radius: 3px;
+  display: none;
+  margin: 20px;
+  font-size: 30px;
+  color: black;
+}
+
+.nave .list1 ul li {
+  display: none;
+}
+.listul {
+  display: flex;
+}
+.nave .Flower {
+  margin-left: 0px;
+}
+.nave .list2 {
+  display: flex;
+}
+
+@media (max-width : 1075px){
+  .part  .container2 img {
+    width: 400px;
+    margin-top: 20px;
+  }
+  .Youssefal,
+  .img1,
+.img3 {
+  margin: 20px;
+}
+  
+}
+
+@media (max-width : 786px){
+  .part .container2 .text1 {
+    width: 100%;
+    text-align: center;
+  }
+  .books-4 > div {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .books-4 > div .text2 {
+    border-left: 0;
+    border-top: 5px rgb(243, 181, 13) solid;
+    border-radius: 5px;
+    font-size: 16px;
+    padding-top: 15px;
+  }
+  .books-4 > div img{
+    margin: 5px auto;
+  }
+  .section2 .link h1{
+    font-size: 20px;
+  }
+}

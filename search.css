@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+  
+}
+/*part1*/
+header{
+    width: 100%;
+   
+    position: fixed;
+    background-color: rgb(243, 181, 13);
+   
+    z-index: 999;
+    
+}
+header .container{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    
+}
+.header{
+    display: flex;
+    margin-left: 20px;
+    height: 60px;
+}
+
+.header i{
+font-size: 45px;
+color: rgb(118, 88, 13);
+padding-top: 6px;
+}
+.header h1{
+margin: 0 10px;
+font-size: 40px;
+font-weight:bold;
+ font-family: 'Caveat', cursive;
+ color:rgb(30, 19, 9);
+}
+
+.logo  li{
+display: inline-block;
+
+
+
+}
+.logo  a{
+    margin:0 16px;
+    position: relative;
+ text-transform: capitalize;
+   color:aliceblue;
+   font-weight: bold;
+   font-size: 20px;
+   transition:1.2s ease;
+ 
+   
+}
+
+
+
+.logo  a:hover{
+   color:rgb(91, 67, 2) ;
+   transform:scale(19)
+}
+
+/*part2*/
+.search{
+    width:100%;
+    position: relative;
+}
+.search form{
+    width: 100%;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    position:absolute;
+    top:370px;
+   
+}
+.search form .text{
+    width:60%;
+    padding: 15px  0;
+    margin: 0 10px;
+  font-size: 20px;
+outline: none;
+border: none;
+color:  rgb(78, 62, 16);
+
+  border-radius: 10px;
+  border: 2px  rgb(140, 104, 7) solid ;
+
+}
+.search form .submit{
+    padding: 15px 40px;
+    border-radius: 10px;
+    border: none;
+    transition:1.2s ease;
+  font-size: 20px;
+  color:aliceblue;
+  background-color: rgb(243, 181, 13); 
+  font-weight: 700;
+  cursor: pointer;
+}
+.search form .submit:hover{
+color:white; 
+background-color: rgb(148, 86, 25);
+}
